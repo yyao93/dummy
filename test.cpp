@@ -1,11 +1,10 @@
 #include <iostream>
 
-int mymax(int a, int b) {
-  return (a > b) ? a : b;
-}
-
-int mymin(int a, int b) {
-  return (a < b) ? a : b;
+int my_max_min(bool isMax, int a, int b) {
+  if (isMax)
+    return (a > b) ? a : b;
+  else
+    return (a < b) ? a : b;
 }
 
 int main() {
@@ -13,6 +12,6 @@ int main() {
   for (auto i = 0; i < n; i++) {
     std::cout << i;
   }
-  std::cout << mymax(3, 5) << mymin(3, 5) << std::endl;
+  std::cout << my_max_min(true, 3, 5) << my_max_min(false, 3, 5) << std::endl;
   return 0;
 }

@@ -13,6 +13,6 @@ int main() {
   for (auto i = 0; i < n; i++) {
     std::cout << i << std::endl;
   }
-  std::cout << mymax(3, 5) << std::endl;
+  std::cout << mymax(30, 50) << std::endl;
   return 0;
 }

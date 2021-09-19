@@ -4,6 +4,10 @@ int mymax(int a, int b) {
   return (a > b) ? a : b;
 }
 
+int mymin(int a, int b) {
+  return 0;
+}
+
 int main() {
   int n = 2;
   for (auto i = 0; i < n; i++) {
